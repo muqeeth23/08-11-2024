@@ -13,8 +13,15 @@ updated on 18-11 from hotfix
 
 updating my code
 
-sadgasdgaf
-asdgag
 
-asdgasfaf
+resouce "aws_vpc"
+resource "aws_subnet" "main" {
+    vpc_id     = aws_vpc.main.id
+    cidr_block = "10.0.1.0/24"
+  
+    tags = {
+      Name = "Main"
+    }
+  }
+>>>>>>> de6c01087a2f710e10d4664dd426417954b265d1
 
